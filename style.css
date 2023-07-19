@@ -17,6 +17,9 @@ body {
 /* Header section */
 
 #header-section{
+    background-image: url(Images/banner-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     padding-left: 60px;
     padding-right: 60px;
 
@@ -25,6 +28,12 @@ body {
     grid-gap: 60px;
     justify-content: center;
     align-items: center;
+}
+
+.t-color{
+    background: linear-gradient(90deg, #F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #banner-img{
@@ -38,7 +47,7 @@ body {
 }
 
 .banner-btn{
-    background-color: #00b893;
+    background-color: #FF42A5;
     padding: 10px 20px;
     border: none;
     color: white;
@@ -47,7 +56,7 @@ body {
 }
 
 .banner-btn-second{
-    background-color: rgb(42, 112, 185);
+    background-color: #4EC5F7;
 }
 
 .b-text{
@@ -60,7 +69,6 @@ nav {
     padding-right: 60px;
     width: 100%;
     height: 16vh;
-    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,7 +112,66 @@ input[type="checkbox"] {
     display: none;
 }
 
+/* Online-games-section */
 
+.online-games-section{
+    margin-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.Online-games{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.section-head{
+    text-align: center;
+}
+
+.play-instantly-section{
+    margin-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.play-instantly{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.double-image{
+    display: flex;
+    justify-content: center;
+    margin-top: -300px;
+    margin-right: -300px;
+}
+
+#play-img{
+    width: 100%;
+    height: 86vh;
+}
+
+.four-section{
+    margin-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.forth{
+    display: flex;
+    align-items: center;
+}
 
 /* Responsive Section */
 
@@ -113,11 +180,11 @@ input[type="checkbox"] {
     /* Header section */
 
     #header-section{
+        background-size: cover;
         padding-left: 15px;
         padding-right: 15px;
         grid-gap: 30px;
-        display: flex;
-        flex-direction: column-reverse;
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-items: center;
     }
@@ -125,6 +192,14 @@ input[type="checkbox"] {
     #banner-img{
         width: 100%;
         height: 47vh;
+    }
+
+    .header-content{
+        order: 1;
+    }
+
+    .header-image{
+        order: 0;
     }
 
     .banner-heading{
@@ -179,5 +254,55 @@ input[type="checkbox"] {
 
     #click:checked~ul li a {
         margin-left: 0px;
+    }
+
+    /* online-games-section */
+
+    .online-games-section{
+        margin-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .Online-games{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+
+    .online-games-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play-instantly-section{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .play-instantly{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .double-image{
+        display: flex;
+        margin-top: -150px;
+        margin-right: -100px;
+    }
+    
+    #play-img{
+        width: 70%;
+        height: 50vh;
+    }
+    
+    .d-img{
+        width: 40%;
     }
 }
