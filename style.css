@@ -14,15 +14,25 @@ body {
     margin: auto;
 }
 
+/* Header section */
+
+/* header{
+    padding-left: 100px;
+    padding-right: 100px;
+} */
+
 /* Navbar css */
 
 nav {
+    padding-left: 60px;
+    padding-right: 60px;
     width: 100%;
     position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 nav ul {
@@ -32,18 +42,22 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 5px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #111;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    padding: 8px 15px;
     border-radius: 5px;
     letter-spacing: 1px;
     transition: all 0.3s ease;
+}
+
+nav ul li a#special-a{
+    background-color: #f4f2f1;
+    padding: 10px;
 }
 
 nav .menu-btn i {
@@ -63,10 +77,12 @@ input[type="checkbox"] {
 
 @media (max-width: 445px) {
 
+    /* Header section */
     /* Navbar Responsive */
 
-    nav {
-        background: #FFF8F3;
+    nav{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     nav .menu-btn i {
@@ -79,7 +95,7 @@ input[type="checkbox"] {
 
     nav ul {
         position: fixed;
-        top: 80px;
+        top: 106px;
         left: -100%;
         background: #FFF8F3;
         height: 100vh;
@@ -108,11 +124,5 @@ input[type="checkbox"] {
 
     #click:checked~ul li a {
         margin-left: 0px;
-    }
-
-    nav ul li a.active,
-    nav ul li a:hover {
-        background: none;
-        color: #FF900E;
     }
 }
