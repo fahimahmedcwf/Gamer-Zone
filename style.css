@@ -131,6 +131,26 @@ input[type="checkbox"] {
     text-align: center;
 }
 
+/* Bonus hover */
+    .bonus-hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -70%;
+        opacity: 0;
+    }
+
+    .bonus-hover:hover{
+        color: white;
+        opacity: 1;
+    }
+
+    .online-games-bonus:hover{
+        opacity: 0.2;
+    }
+/* bonus hover finished */
+
 .play-instantly-section{
     margin-top: 50px;
     padding-left: 60px;
@@ -140,7 +160,7 @@ input[type="checkbox"] {
 .play-instantly{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 300px;
+    grid-gap: 200px;
     justify-content: center;
     align-items: center;
 }
@@ -149,7 +169,6 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center;
     margin-top: -300px;
-    margin-right: -300px;
 }
 
 #play-img{
@@ -182,8 +201,37 @@ input[type="checkbox"] {
 
 /* footer */
 
+footer{
+    margin-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #131212;
+    color: white;
+    padding: 20px;
+}
+
 .footer-logo{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.foot-text{
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    margin-top: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.foo{
+    margin-top: 20px;
+    color: gray;
 }
 
 
@@ -309,7 +357,6 @@ input[type="checkbox"] {
     .double-image{
         display: flex;
         margin-top: -150px;
-        margin-right: -100px;
     }
     
     #play-img{
@@ -332,4 +379,38 @@ input[type="checkbox"] {
         align-items: center;
     }
     
+    /* footer */
+
+footer{
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #131212;
+    color: white;
+    padding: 20px;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.foot-text{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.social{
+    margin-top: 20px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.foo{
+    margin-top: 20px;
+    color: gray;
+}
 }
