@@ -16,17 +16,50 @@ body {
 
 /* Header section */
 
-/* header{
-    padding-left: 100px;
-    padding-right: 100px;
-} */
+#header-section{
+    padding-left: 60px;
+    padding-right: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-img{
+    width: 100%;
+    height: 84vh;
+}
+
+.banner-heading{
+    font-size: 60px;
+    line-height: 65px;
+}
+
+.banner-btn{
+    background-color: #00b893;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.banner-btn-second{
+    background-color: rgb(42, 112, 185);
+}
+
+.b-text{
+    line-height: 25px;
+}
 
 /* Navbar css */
-
 nav {
     padding-left: 60px;
     padding-right: 60px;
     width: 100%;
+    height: 16vh;
     position: sticky;
     display: flex;
     align-items: center;
@@ -78,11 +111,33 @@ input[type="checkbox"] {
 @media (max-width: 445px) {
 
     /* Header section */
+
+    #header-section{
+        padding-left: 15px;
+        padding-right: 15px;
+        grid-gap: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #banner-img{
+        width: 100%;
+        height: 47vh;
+    }
+
+    .banner-heading{
+        font-size: 50px;
+        line-height: 65px;
+    }
+    
     /* Navbar Responsive */
 
     nav{
         padding-left: 15px;
         padding-right: 15px;
+        height: 12vh;
     }
 
     nav .menu-btn i {
